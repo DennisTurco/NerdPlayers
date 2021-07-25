@@ -1,0 +1,246 @@
+body{
+/*	background-color:lightgray;*/
+	background-image: url("immagini/cube.gif");
+}
+
+
+#triangolo{
+	position: absolute;
+	z-index: 1;
+	margin-top: -15px;
+	margin-left: -30px;
+	height: 150px;
+}
+
+#tabellacentrale{
+	margin-top: 100px;
+	box-shadow: 3px 3px 3px 3px rgb(119, 117, 117);
+	border-radius: 1000px;
+}
+#celle_tabellacentrale{
+	width: 200px;
+}
+#unisciti{
+	font-family : comic sans ms;
+	color: lightgray;
+}
+
+
+#titolo{
+	color: lightgrey; 
+	font-family : Showcard gothic;
+	border-radius: 10px;
+	font-size: 30px;
+	padding: 10px 20px;
+}
+
+
+/*Cella Titolo*/
+#cellatitolo{
+    width: 100%;
+	background-color: #0f0f0f;
+	text-align: center;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+}
+
+
+/*logo*/
+#logo{
+	border-radius: 100px;
+	height: 100px;
+	margin-top: 15px;
+	margin-left: 100px;
+	position: absolute;
+	z-index: 1;
+	box-shadow: 0px 0px 1px 1px rgb(119, 117, 117);	
+}
+
+#logo:hover {
+	animation: rotation 1.5s;
+}
+
+#tabella_cod{
+	height: 300px; 
+	border-radius: 15px; 
+	margin-top: 50px;
+}
+
+#tabella_cod:hover{
+	height: 500px;
+	transition: 1s; 
+}
+
+/*Sottotitolo*/
+#sottotitolo{
+	text-align: center;
+	font-family : comic sans ms;
+	color: lightgrey;
+	background-color: #0f0f0f;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+
+}
+
+#icone{
+	height: 150px; 
+	border-radius: 400px; 
+	margin: 10px;
+	transition: 0.8s;
+	opacity: 0.7;
+	border: #444 1px solid;
+}
+
+#icone:hover{
+	transition: 0.8s;
+	opacity: 1;	
+	height: 170px; 
+}
+
+#medaglie{
+	width: 70px;
+}
+
+
+
+/*MENU A TENDINA*/
+/*container*/
+#drop-menu {
+	margin: 0 auto;
+	padding: 0;
+	width: 960px;
+}
+
+/*menu*/
+ul#menu {
+	margin-top:10px;
+	padding: 0;
+	list-style: none;
+	float:left;
+	width: 947px;
+	background-color: rgb(53, 51, 51);
+	font-size:80%;
+	border-radius: 15px;
+	margin: 0 auto;
+	opacity:0.93;
+}
+
+ul#menu li {
+	margin:0;
+	padding:0;
+	float:left;
+	display: block;
+	border-right: 1px solid #222;
+	position: relative;
+}
+
+ul#menu li a {
+	float: left;
+	padding: 12px 30px;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+ul#menu li a:hover {
+	background: #666;
+	color:#fff;
+	border-radius: 15px;
+}
+
+ul#menu ul {
+	margin:2px 0 0;
+	padding:0;
+	display:inline-block;
+	list-style: none;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	top: 38px;
+	left: 0;
+	z-index:9999;
+	background: #444;
+}
+
+ul#menu li:hover ul {
+	opacity: 1;
+	visibility: visible;
+}
+
+ul#menu ul li {
+	float: none;
+	display: block;
+	border: 0;
+}
+
+ul#menu ul a {
+	padding:10px;
+	width: 130px;
+	display: block;
+	white-space: nowrap;
+	float: none;
+	text-transform: none;
+}
+
+ul#menu ul a:hover {
+	background-color: #4a4d4e;
+	color:#fff
+}
+
+h1:hover {
+	animation: shake 1s;
+	animation-iteration-count: infinite;
+  }
+
+@keyframes rotation {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(359deg);
+	}
+}
+  
+@keyframes shake {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(3px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+  /*ANIMAZIONE DI CARICAMENTO*/
+  #loader {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 1;
+	width: 150px;
+	height: 150px;
+	margin: -75px 0 0 -75px;
+	border: 13px solid #d9d9d9;
+	border-radius: 50%;
+	border-top: 13px solid rgb(39, 41, 39);
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+  }
+
+  #myDiv {
+	display: none;
+  }

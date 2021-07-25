@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+    <title> NERD PLAYERS </title>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div> 
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+
+<table cellspacing="0" style="margin: 25px;">
+	<tr><td rowspan="2" id="cellalogo"></td> <td id="cellatitolo"><a href="index.html"><h1 id="titolo">NERD PLAYERS</h1></a></td></tr>	<tr><td id="sottotitolo" colspan="2" height="35" valign="top">Server Discord per veri gamers!</td></tr>
+    <img src="immagini/triangolo.png" id="triangolo"></img>
+    <a href="index.html"><img src="immagini/logo.png" id="logo"></img></a>
+</table>
+
+<div id="drop-menu">
+    <ul id="menu">
+        <li><a href="index.html" title="Home"><img src="immagini/6952422px.png" height="15"></img></a></li>
+        <li><a href="organico.html">Organico</a></li>
+        <li><a>Onorificenze</a>
+            <ul>  
+                <li><a href="Gradi.html">Gradi</a></li>
+                <li><a href="medaglie.html">Medaglie</a></li>
+            </ul>      
+        <li><a>Eventi</a>
+            <ul>
+                <li><a href="cod.html">Call Of Duty</a></li>
+                <li><a href="vietnam.html">Rising Storm 2: Vietnam</a></li>
+            </ul>
+        <li><a>Galleria</a>
+            <ul>
+                <li><a href="foto.html">Foto</a></li>
+                <li><a href="video.html">Video</a></li>
+            </ul>
+</div>
+
+
+<center><img src="immagini/tabella_evento_cod.PNG" id="tabella_cod"></center>
+
+</div>
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 1000);
+}
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+</body>
+</html>

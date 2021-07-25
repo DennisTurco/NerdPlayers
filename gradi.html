@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+    <title> NERD PLAYERS </title>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div> 
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+
+<table cellspacing="0" style="margin: 25px;">
+	<tr><td rowspan="2" id="cellalogo"></td> <td id="cellatitolo"><a href="index.html"><h1 id="titolo">NERD PLAYERS</h1></a></td></tr>	<tr><td id="sottotitolo" colspan="2" height="35" valign="top">Server Discord per veri gamers!</td></tr>
+    <img src="immagini/triangolo.png" id="triangolo"></img>
+    <a href="index.html"><img src="immagini/logo.png" id="logo"></img></a>
+</table>
+
+<div id="drop-menu">
+    <ul id="menu">
+        <li><a href="index.html" title="Home"><img src="immagini/6952422px.png" height="15"></img></a></li>
+        <li><a href="organico.html">Organico</a></li>
+        <li><a>Onorificenze</a>
+            <ul>  
+                <li><a href="Gradi.html">Gradi</a></li>
+                <li><a href="medaglie.html">Medaglie</a></li>
+            </ul>      
+        <li><a>Eventi</a>
+            <ul>
+                <li><a href="cod.html">Call Of Duty</a></li>
+                <li><a href="vietnam.html">Rising Storm 2: Vietnam</a></li>
+            </ul>
+        <li><a>Galleria</a>
+            <ul>
+                <li><a href="foto.html">Foto</a></li>
+                <li><a href="video.html">Video</a></li>
+            </ul>
+</div>
+
+<center><table border="1" style="margin-top: 100px; width: 50%; border: solid darkred 1px;">
+<tr>
+    <td width="25%"></td> 
+    <th style="color: lightgrey; font-size: 20px;" width="50%">GRADI</th>
+    <td width="25%" style="text-align: center; color: aquamarine;"></td> 
+</tr>
+<tr>
+    <td><center><img src="gradi/Generale.PNG"></center></td> 
+    <td style="color: white; text-align: center; font-size: 30px;">Generale</td>
+    <td style="text-align: center; color: aquamarine;">Grado solo per gli organizzatori</td> 
+</tr>
+<tr>
+    <td><center><img src="gradi/Colonnello.png"></center></td> 
+    <td style="color: white; text-align: center; font-size: 30px;">Colonnello</td>
+    <td style="text-align: center; color: aquamarine;">Grado ottenibile partecipando almeno a <b style="color:white;">15 eventi</b> possedendo <b style="color:white;">tutte le medaglie </b> al merito di un gioco</td> 
+</tr>
+<tr>
+    <td><center><img src="gradi/Capitano.PNG"></center></td> 
+    <td style="color: white; text-align: center; font-size: 30px;">Capitano</td>
+    <td style="text-align: center; color: aquamarine;">Grado ottenibile partecipando a <b style="color: white;">10 eventi</b> e possedendo <b style="color:white;">4 medaglie</b> al merito </td> 
+</tr>
+<tr>
+    <td><center><img src="gradi/SoldatoScelto.PNG"></center></td> 
+    <td style="color: white; text-align: center; font-size: 30px;">Soldato Scelto</td>
+    <td style="text-align: center; color: aquamarine;">Grado ottenibile partecipando almeno a <b style="color:white;">6 eventi</b> e possedendo <b style="color:white;">una medaglia</b> al merito</td> 
+</tr>
+<tr>
+    <td><center><img src="gradi/Soldato.PNG"></center></td> 
+    <td style="color: white; text-align: center; font-size: 30px;">Soldato</td>
+    <td style="text-align: center; color: aquamarine;">Grado ottenibile partecipando almeno a <b style="color:white;">3 eventi</b></td> 
+</tr>
+<tr>
+    <td><center><img src="gradi/Recluta.PNG"></center></td> 
+    <td style="color: white; text-align: center; font-size: 30px;">Recluta</td>
+    <td style="text-align: center; color: aquamarine;">Grado Default per tutti i partecipanti agli eventi</td>
+</tr>
+
+</table></center><p>
+
+</div>  
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 1000);
+}
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+</body>
+</html>

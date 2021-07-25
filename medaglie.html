@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+    <title> NERD PLAYERS </title>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div> 
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+
+<table cellspacing="0" style="margin: 25px;">
+	<tr><td rowspan="2" id="cellalogo"></td> <td id="cellatitolo"><a href="index.html"><h1 id="titolo">NERD PLAYERS</h1></a></td></tr>	<tr><td id="sottotitolo" colspan="2" height="35" valign="top">Server Discord per veri gamers!</td></tr>
+    <img src="immagini/triangolo.png" id="triangolo"></img>
+    <a href="index.html"><img src="immagini/logo.png" id="logo"></img></a>
+</table>
+
+<div id="drop-menu">
+    <ul id="menu">
+        <li><a href="index.html" title="Home"><img src="immagini/6952422px.png" height="15"></img></a></li>
+        <li><a href="organico.html">Organico</a></li>
+        <li><a>Onorificenze</a>
+            <ul>  
+                <li><a href="Gradi.html">Gradi</a></li>
+                <li><a href="medaglie.html">Medaglie</a></li>
+            </ul>      
+        <li><a>Eventi</a>
+            <ul>
+                <li><a href="cod.html">Call Of Duty</a></li>
+                <li><a href="vietnam.html">Rising Storm 2: Vietnam</a></li>
+            </ul>
+        <li><a>Galleria</a>
+            <ul>
+                <li><a href="foto.html">Foto</a></li>
+                <li><a href="video.html">Video</a></li>
+            </ul>
+</div>
+
+<center><table border="1" style="width: 30%; margin-top: 150px; border: 1px solid darkred;">
+    <tr>
+        
+        <td style="text-align: center; color: white; size:30px;" colspan="3">Universali</td>
+        
+    </tr>
+    <tr>
+        <td><center><img src="Medaglie/un2.PNG"></center></td>
+        <td width="5%"></td>
+        <td style="text-align: center; color: aquamarine;">Per chi si &egrave comportato con rispetto ed educazione</td>
+    </tr>
+    <tr>
+        <td><center><img src="Medaglie/un1.png"></center></td>
+        <td width="5%"></td>
+        <td style="text-align: center; color: aquamarine;">Per chi ha partecipato al primo evento del server</td>
+    </tr>
+</table></center>
+
+<center><table border="1" style="width: 30%; margin-top: 150px; border: 1px solid darkred;">
+    <tr>
+        
+        <td style="text-align: center; color: white; size:30px;" colspan="3">Rising Storm 2: Vietnam</td>
+        
+    </tr>
+    <tr>
+        <td><center><img src="Medaglie/vietnam/Medagliaoro.png"></center></td>
+        <td width="5%"></td>
+        <td style="text-align: center; color: aquamarine;">Per chi ha fatto almeno 65 kills in una sola partita come soldato (non vale usare il Commander)</td>
+    </tr>
+    <tr>
+        <td><center><img src="Medaglie/vietnam/MedagliaArgento.png"></center></td>
+        <td width="5%"></td>
+        <td style="text-align: center; color: aquamarine;">Per chi ha fatto almeno 45 kills in una sola partita come soldato (non vale usare il Commander)</td>
+    </tr>
+    <tr>
+        <td><center><img src="Medaglie/vietnam/MedagliaBronzo.png"></center></td>
+        <td width="5%"></td>
+        <td style="text-align: center; color: aquamarine;">Per chi ha fatto almeno 30 kills in una sola partita come soldato (non vale usare il Commander)</td>
+    </tr>
+    <tr>
+        <td><center><img src="Medaglie/vietnam/Medaglia1.PNG"></center></td>
+        <td width="5%"></td>
+        <td style="text-align: center; color: aquamarine;">Per chi ha partecipato ad almeno 2 eventi</td>
+    </tr>
+</table></center>
+
+<center><table border="1" style="width: 30%; margin-top: 150px; border: 1px solid darkred;">
+    <tr>
+        
+        <td style="text-align: center; color: white; size:30px;" colspan="3">Call Of Duty</td>
+        
+    </tr>
+    <tr>
+        <td><center><img src="Medaglie/Cod/med1.png"></center></td>
+        <td width="5%"></td>
+        <td style="text-align: center; color: aquamarine;">Per chi conclude il round senza morire</td>
+    </tr>
+    <tr>
+        <td><center><img src="Medaglie/Cod/med2.PNG"></center></td>
+        <td width="5%"></td>
+        <td style="text-align: center; color: aquamarine;">Per chi vince il torneo</td>
+    </tr>
+    <tr>
+        <td><center><img src="Medaglie/Cod/med3.PNG"></center></td>
+        <td width="5%"></td>
+        <td style="text-align: center; color: aquamarine;">Arriva in finale</td>
+    </tr>
+    <tr>
+        <td><center><img src="Medaglie/Cod/med4.PNG"></center></td>
+        <td width="5%"></td>
+        <td style="text-align: center; color: aquamarine;">Partecipa almeno a 2 tornei</td>
+    </tr>
+</table></center>
+<p>
+
+</div>  
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 1000);
+}
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+</body>
+</html>
